@@ -36,9 +36,7 @@ module rim(){
       
       translate([(85+4)/2-32.5+9,0,0])
         cube([4,10,bottom_thickness*2+1], center=true);
-      
-      logo();
-      
+            
     }
     rotate([0,0,90])
       screw_bottom();
@@ -53,13 +51,6 @@ module rim(){
   }
 }
 
-module logo()
-{
-  translate([-46,-51.5,5])
-      rotate([90,0,0])
-        linear_extrude(1)
-          text("LAMPETHERE");
-}
 
 module inside_space(height, bottom_thickness)
 {
