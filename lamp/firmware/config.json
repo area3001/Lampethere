@@ -1,0 +1,21 @@
+{
+    "wifi" : {
+        "networks" : [
+            {"ssid":"", "password":"", "prio":"", "hidden":""},
+            {"ssid":"", "password":"", "prio":"", "hidden":""}
+        ],
+        "ota_url" : ""
+    },
+    "mqtt" : {
+        "host":"",
+        "port":0,
+        "user":"",
+        "password":"",
+        "base_topic":""
+    },
+    "device" : {
+        "pixels":44,
+        "neopixel_pin":0,
+        "button0_pin":0
+    }
+}
