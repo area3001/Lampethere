@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Lampethere config</title>
+  </head>
+  <body>
+    <form>
+      <h2>Access point</h2>
+      <button id="scan_button" onclick="scan(event)">Scan for SSIDs</button>
+      <select id="ssid_select" class="hidden">
+        <option>option</option>
+      </select>
+      <label>
+        SSID:
+        <input type="text" id="ssid_input" name="ssid" placeholder="SSID" />
+      </label>
+      <label>Hidden<input type="checkbox" name="hidden" /></label>
+      <label>Password <input type="password" name="password" /></label>
+
+      <button type="submit">Save</button>
+    </form>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
