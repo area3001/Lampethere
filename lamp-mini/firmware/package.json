@@ -1,6 +1,6 @@
 {
     "urls": [
-      ["lampethere/app.py", "github:area3001/Lampethere/mini/lamp-mini/firmware/app.py"]
+      ["lampethere/app.py", "github:area3001/Lampethere/lamp-mini/firmware/app.py"]
     ],
     "deps": [
       ["umqtt.simple", "latest"]
