@@ -1,3 +1,3 @@
 class Lampethere():
     def run():
-        print("version 2")
+        print("version 4")
