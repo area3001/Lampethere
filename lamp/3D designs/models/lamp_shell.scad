@@ -10,7 +10,7 @@ module lamp_shell(height)
       outer_r = 5;
       outer_size = 120;
       inner_r = 5;
-      inner_size = 91.5;
+      inner_size = 87.5;
       minkowski()
       {
         square(outer_size-outer_r*2, center=true);

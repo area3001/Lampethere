@@ -1,11 +1,11 @@
-use <models\lamp_shell.scad>;
-use <models\screw_bottom_part.scad>;
+use <models/lamp_shell.scad>;
+use <models/screw_bottom_part.scad>;
 
 
 rim();
 
 module rim(){
-  inside_size = [85,85];
+  inside_size = 81.5;
   top_thickness = 2;
   bottom_thickness = 2;
   height = 20;
@@ -21,7 +21,7 @@ module rim(){
           lamp_shell(height);      
       }
       
-      inside_space(height, bottom_thickness);
+      inside_space(height,inside_size, bottom_thickness);
       
       hull()
       {
@@ -52,16 +52,16 @@ module rim(){
 }
 
 
-module inside_space(height, bottom_thickness)
+module inside_space(height,inside_size, bottom_thickness)
 {
   //actual free space is height-bottom_tickness
   translate([0,0,(height/2)+bottom_thickness])
-      cube([85,85,height],center=true);
+      cube([inside_size,inside_size,height],center=true);
 }
 
 module cover_outer_shell(height)
 {
-  size = 100 + 4;
+  size = 100+1.5;
   r = 2.5;
   d = r*2;
   translate([r-size/2,r-size/2,r])

@@ -1,8 +1,8 @@
 use <rim.scad>;
 use <lid.scad>;
-use <models\lamp_shell.scad>;
+use <models/lamp_shell.scad>;
 use <socket_adapter.scad>;
-use <models\screw.scad>;
+use <models/screw.scad>;
 
 *color([.6,.6,.7])
   translate([0,0,198-9.8])

@@ -5,7 +5,7 @@ module lid(){
   pcb_max_h = 5;
   ceiling_depth = 1;
   wall = 2;
-  lid_dimensions = 84;
+  lid_dimensions = 80.5;
   button_height = 3.5;
   finger_d=6;
   button_to_button=58;
